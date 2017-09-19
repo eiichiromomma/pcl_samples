@@ -9,7 +9,7 @@ int main(int argc, char** argv)
 {
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
     if (argc < 2){
-        std::cout << "Usage: pcdViewer pcdfile.pcd" << std::endl;
+        std::cout << "Usage: SACSegmentation pcdfile.pcd" << std::endl;
     }else{
         if (pcl::io::loadPCDFile(argv[1], *cloud) == -1){
             return -1;
