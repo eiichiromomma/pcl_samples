@@ -67,7 +67,7 @@ int main(int argc, char** argv)
     sor.setStddevMulThresh(0.3);
     pcl::IterativeClosestPoint<pcl::PointXYZ, pcl::PointXYZ> icp;
     //icpRegistrationより遥かに狭い範囲で済む
-    icp.setMaxCorrespondenceDistance(2.0);
+    icp.setMaxCorrespondenceDistance(4.0);
     //iterationの回数(条件1)
     icp.setMaximumIterations(500);
     //条件2
