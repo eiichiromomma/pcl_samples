@@ -15,7 +15,7 @@ namespace fs = boost::filesystem;
 int main(int argc, char** argv)
 {
     if (argc < 2){
-        std::cout << "Usage: icpRegistration pcd_folder" << std::endl;
+        std::cout << "Usage: tranICPRegistration pcd_folder" << std::endl;
     }
     const fs::path data_path(argv[1]);
     fs::directory_iterator end;
