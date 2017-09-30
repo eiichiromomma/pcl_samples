@@ -6,6 +6,7 @@ find_package(PCL  REQUIRED)
 find_package(VTK  REQUIRED)
 find_package(Qt5Widgets REQUIRED)
 
+
 set (CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include_directories(${PCL_INCLUDE_DIRS})
@@ -15,3 +16,4 @@ add_definitions(${PCL_DEFINITIONS})
 
 add_executable (pcdViewerQt main.cpp)
 target_link_libraries (pcdViewerQt ${PCL_LIBRARIES} )
+qt5_use_modules(pcdViewerQt Core Gui Widgets)
