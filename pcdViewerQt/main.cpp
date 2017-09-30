@@ -16,7 +16,7 @@ int main(int argc, char** argv)
     auto filename = QFileDialog::getOpenFileName();
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
     if (filename.isNull()){
-        std::cout << "Usage: pcdViewer pcdfile.pcd" << std::endl;
+        return -1;
     }else{
         if (pcl::io::loadPCDFile(filename.toStdString(), *cloud) == -1){
             return -1;
