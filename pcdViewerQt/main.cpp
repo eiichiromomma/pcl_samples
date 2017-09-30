@@ -13,7 +13,7 @@ int main(int argc, char** argv)
 {
     QApplication a(argc, argv);
     QFile file;
-    auto filename = QFileDialog::getOpenFileName();
+    auto filename = QFileDialog::getOpenFileName(nullptr, "Open PDC File", "PDC File (*.pdc)");
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
     if (filename.isNull()){
         return -1;
