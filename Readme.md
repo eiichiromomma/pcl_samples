@@ -10,6 +10,8 @@ PCLのサンプル
 7. tranICPRegistration: 6でICPの前に直前の移動行列を反映させて一致しやすくさせる
 8. regionGrowing: 4の結果について法線推定をした後でregionGrowingによるクラスタリング
 9. GreedyProjTr: GreedyProjectionTriangulationでメッシュ化。あとPointNormalの使い方
+10. pcdViewerQt: 1でのファイルの選定をQtで。
+11. tranICPRegistrationQt: 7でのフォルダ選定をQtで。
 
 
 ※サンプルデータは[kitti2pcl](https://github.com/jaejunlee0538/kitti2pcl)でKITTI datasetから抽出したもの
